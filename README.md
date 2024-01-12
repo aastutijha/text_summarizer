@@ -8,3 +8,6 @@ venv\Scripts\activate
 
 # install all the dependencies
 pip install -r requirements.txt
+
+# to run the code 
+flask run 
