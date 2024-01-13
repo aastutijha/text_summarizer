@@ -1,0 +1,66 @@
+:root {
+    --btn-clr: rgb(58, 143, 255);
+    --border-clr: rgba(100, 100, 100, 0.318);
+    --default-padding: 10px;
+    --default-margin: 15px;
+    --default-font-size: 16px;
+    --default-border-radius: 6px;
+    --default-transition: all ease 0.4s;
+    --default-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+#login-form, .error-msg {
+    border: transparent;
+    border-radius: var(--default-border-radius);
+    background-color: white;
+    padding-top: var(--default-padding);
+    margin-bottom: var(--default-margin);
+    text-align: center;
+    box-shadow: rgba(67, 71, 85, 0.192) 0px 0px 0.25em, rgba(90, 124, 188, 0.027) 0px 0.25em 1em;
+}
+
+h1, p {
+    margin: 50px;
+    font-size: var(--default-font-size);
+    font-weight: 500;
+}
+
+input, button {
+    padding: var(--default-padding);
+    margin: var(--default-margin);
+    width: 250px;
+    border-radius: var(--default-border-radius);
+    border: 1px solid var(--border-clr);
+    outline: none;
+    font-size: var(--default-font-size);
+    font-weight: 500;
+}
+
+button, #google-button {
+    border: transparent;
+    background-color: var(--btn-clr);
+    color: white;
+    box-shadow: var(--default-box-shadow);
+    transition: var(--default-transition);
+}
+
+button:active, #google-button:active {
+    scale: 0.85;
+}
+
+input::placeholder {
+    font-size: var(--default-font-size);
+    font-weight: 500;
+}
+
+hr {
+    width: 80%;
+    margin: var(--default-margin) auto;
+}
+
+.error-msg {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.07);
+    padding: 8px;
+    margin: var(--default-margin);
+}
