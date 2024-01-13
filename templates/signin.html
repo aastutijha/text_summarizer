@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="../static/signin.css"> <!-- You can link your own stylesheet here -->
+</head>
+<body>
+
+    <form id="signInForm" action="your_server_endpoint" method="post">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" class="inp usrnm" name="username" required>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" class="inp pswd" name="password" required>
+        </div>
+
+        <div>
+            <input type="submit" value="Sign In" disabled>
+        </div>
+    </form>
+
+    <script src="signin.js"></script> <!-- Include your JavaScript file -->
+
+</body>
+</html>

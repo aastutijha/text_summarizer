@@ -1,0 +1,126 @@
+/* Reset some default styles and set a basic font family */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style for the main form container */
+form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+/* Style for individual form elements */
+form div {
+    margin-bottom: 15px;
+}
+
+/* Style for labels within the form */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style for input fields */
+.inp {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for the custom file input */
+.custom-file {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the actual file input element (hidden) */
+.custom-file-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+    cursor: pointer;
+    opacity: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the label of the custom file input */
+.custom-file-label {
+    display: inline-block;
+    margin-top: 2px;
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style for the disabled submit button */
+input[type="submit"]:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+/* ... (previous styles) */
+
+/* Style for the submit button */
+input[type="submit"] {
+    background-color: #4285f4; /* Blue color */
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover or click */
+}
+
+/* Style for the disabled submit button */
+input[type="submit"]:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Style for the submit button when clicked */
+input[type="submit"]:active {
+    background-color: #34a853; /* Green color */
+}
+/* ... (previous styles) */
+
+/* Style for the label of the custom file input */
+.custom-file-label {
+    display: inline-block;
+    margin-top: 2px;
+    background-color: #d4edda; /* Faded green background */
+    color: #155724; /* Dark green text color */
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover effect for the custom file label */
+.custom-file-label:hover {
+    background-color: #c3e6cb; /* Darker green on hover */
+}
+
+/* ... (remaining styles) */
