@@ -1,0 +1,133 @@
+
+  @import 'animate.css';
+
+body {
+ 
+  
+    
+   
+    background-image: url('image1.jpg'); 
+ 
+  background-color: rgba(48, 125, 254, 0.2) ; /* Or your preferred background color */
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#login-form {
+  animation: fadeIn 0.5s ease-in-out;
+  background-color: rgba(48, 125, 254, 0.2) ;
+  border: 1px solid rgba(48, 125, 254, 0.2) ;
+  padding: 30px;
+  width: 400px;
+  box-sizing: border-box;
+  border-radius: 6px; /* Add rounded corners */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; /* Add a subtle shadow */
+  text-align: center;
+  
+  gap:10px;
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 40px;
+ 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+input:focus, button:focus {
+  outline: none;
+  border-color: #58a4ff;
+  box-shadow: rgba(48, 125, 254, 0.2) 0px 0px 0px 1px;
+}
+
+button {
+  background-color: #58a4ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#google-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+.error-msg {
+  animation: shake 0.3s;
+  color: red;
+  background-color: rgba(255, 0, 0, 0.07);
+  padding: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.link-container {
+  text-align: center;
+  margin-top: 15px;
+  background-color: rgba(48, 125, 254, 0.2) ;
+  width: 400px;
+  box-sizing: border-box;
+}
+.form-inputs {
+    margin: 20px auto;
+    margin-bottom: 10px; 
+    display: flex; /* Arrange inputs side-by-side */
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 30px; /* Add spacing between inputs */
+  }
+  
+  input {
+   
+    width: 100%; /* Ensure inputs take full width within the column */
+  }
+  #txt-area {
+  width: 100%; /* Take full width of parent container */
+}
+
+#out-box {
+  flex: 1; /* Expand to fill available space */
+  display: flex;
+  flex-direction: column;
+  /* ... other styles ... */
+  animation: slideInFromBottom 0.5s ease-in-out; /* Apply animation */
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+

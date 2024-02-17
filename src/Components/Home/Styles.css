@@ -1,0 +1,92 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Set bottom to 0 to cover the whole height */
+  padding: 0 10px; /* Adjust the left and right padding as needed */
+  width: 100%;
+  height: 100%;
+  background-image: url('./download.jpg'); /* Absolute path to the image */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+#home-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set min-height to 100vh for the content to fill the screen */
+}
+
+.text-container {
+  text-align: justify;
+  color: #fff;
+  opacity: 0;
+  animation: fadeInUp 1.5s 1.5s ease-out;
+  transition: opacity 0.5s, transform 0.5s;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  width: calc(100% - 40px); /* Cover whole width with 20px padding on each side */
+  max-width: 600px;
+  margin: auto; /* Center the text container */
+  animation: colorChange 5s infinite alternate; 
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #fff;
+  transition: opacity 0.5s;
+}
+
+button {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px; /* Adjusted size */
+ 
+}
+
+
